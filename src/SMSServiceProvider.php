@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lbhurtado
- * Date: 19/04/16
- * Time: 07:59
- */
 
 namespace LBHurtado\SMS;
 
@@ -13,6 +7,20 @@ use LBHurtado\SMS\DriverManager;
 
 class SMSServiceProvider extends SimpleSMSServiceProvider
 {
+	/**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+    	parent::boot();
+
+        $this->publishes([
+            __DIR__.'/../config/sms.php' => config_path('sms.php'),
+        ]);
+    }
+
     public function registerSender()
     {
         parent::registerSender();
