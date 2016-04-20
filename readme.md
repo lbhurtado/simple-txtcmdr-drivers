@@ -10,7 +10,7 @@ Instead of original simple sms service provider, set our:
 ```php
 'providers' => [
   ...
-  TextCommander\SMS\SMSServiceProvider::class
+  LBHurtado\SMS\SMSServiceProvider::class
 ]
 ```
 

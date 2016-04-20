@@ -2,7 +2,7 @@
     "name": "lbhurtado/simple-txtcmdr-drivers",
     "description": "Additional providers for Simple-SMS Laravel package",
     "license": "MIT",
-    "keywords": ["laravel", "sms", "txtcmdr"],
+    "keywords": ["laravel", "sms", "txtcmdr", "telerivet"],
     "authors": [
         {
             "name": "Lester Hurtado",
