@@ -2,6 +2,7 @@
     "name": "lbhurtado/simple-txtcmdr-drivers",
     "description": "Additional providers for Simple-SMS Laravel package",
     "license": "MIT",
+    "keywords": ["laravel", "sms", "txtcmdr"]
     "authors": [
         {
             "name": "Lester Hurtado",
@@ -9,10 +10,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "simplesoftwareio/simple-sms": "^2.1"
+    },
     "autoload": {
         "psr-4": {
-            "TextCommander\\SMS\\": "src/"
+            "LBHurtado\\SMS\\": "src/"
         }
     }
 }
