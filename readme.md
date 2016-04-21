@@ -20,6 +20,7 @@ Set original simple sms alias:
   ...
   'SMS' => SimpleSoftwareIO\SMS\Facades\SMS::class
 ```
+
 Autoload Telerivet API:
 ```php
 autoload: {
