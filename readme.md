@@ -21,7 +21,7 @@ Set original simple sms alias:
   'SMS' => SimpleSoftwareIO\SMS\Facades\SMS::class
 ```
 
-Autoload Telerivet API in composer.json (composer dumpautoload -o):
+Autoload Telerivet API in `composer.json`:
 ```php
 autoload: {
 	classmap: [
@@ -30,7 +30,9 @@ autoload: {
 	],
 	...
 ```
-
+```bash 
+composer dumpautoload -o
+```
 
 Publish original simple sms config:
 ```bash 
