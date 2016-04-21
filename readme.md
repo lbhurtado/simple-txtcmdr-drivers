@@ -1,7 +1,7 @@
 # simple-txtcmdr-drivers
 Additional providers for [Simple-SMS Laravel package](https://github.com/SimpleSoftwareIO/simple-sms)
 
-## Installition
+## Installation
 ```bash 
 composer require "lbhurtado/simple-txtcmdr-drivers: dev-master"
 ```
