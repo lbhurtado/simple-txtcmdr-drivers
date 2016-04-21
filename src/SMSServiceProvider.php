@@ -14,6 +14,12 @@ class SMSServiceProvider extends SimpleSMSServiceProvider
      */
     public function boot()
     {
+    	$this->loadViewsFrom(__DIR__.'/views', 'lbhurtado');
+
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views/vendor/lbhurtado'),
+        ]);
+
         $this->publishes([
             __DIR__.'/config/sms.php' => config_path('sms.php'),
         ]);

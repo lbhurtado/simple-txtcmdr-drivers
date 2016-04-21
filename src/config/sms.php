@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'driver' => 'Selected Driver',
+    'driver' => 'telerivet',
     'from' => 'Your Number or Email',
     'telerivet' => [
         'api_key'    => env('TELERIVET_API_KEY'),
