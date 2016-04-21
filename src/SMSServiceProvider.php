@@ -16,9 +16,7 @@ class SMSServiceProvider extends SimpleSMSServiceProvider
     {
     	parent::boot();
 
-        $this->publishes([
-            __DIR__.'/config/sms.php' => config_path('sms.php'),
-        ]);
+        $this->mergeConfigFrom(__DIR__.'/config/sms.php', 'sms');
     }
 
     public function registerSender()
