@@ -22,7 +22,7 @@ Set original simple sms alias:
 ```
 
 Autoload Telerivet API in `composer.json`:
-```php
+```json
 autoload: {
 	classmap: [
 		database,
@@ -39,11 +39,17 @@ Publish original simple sms config:
 php artisan vendor:publish
 ```
 
-Now you can set up addtition sms drivers in `config/sms.php` file:
+Set up sms drivers in `config/sms.php` file:
 ```php
 'telerivet' => [
     'api_key'    => env('TELERIVET_API_KEY'),
     'project_id' => env('TELERIVET_PROJECT_ID')
+],
+'sun' => [
+    'user' => env('SUN_USER'),
+    'pass' => env('SUN_PASS'),
+    'mask' => env('SUN_MASK'),
+    'login_url' => 'http://mcpro.sun-solutions.ph/emcpro/login.aspx'
 ],
 ```
 

@@ -7,6 +7,12 @@ return [
         'api_key'    => env('TELERIVET_API_KEY'),
         'project_id' => env('TELERIVET_PROJECT_ID'),
     ],
+    'sun' => [
+        'user' => env('SUN_USER'),
+        'pass' => env('SUN_PASS'),
+        'mask' => env('SUN_MASK'),
+        'login_url' => 'http://mcpro.sun-solutions.ph/emcpro/login.aspx'
+    ],
     'smart' => [
         'token'   => env('SMARTSUITE_TOKEN'),
         'wsdl'    => 'https://ws.smartmessaging.com.ph/soap/?wsdl',
