@@ -14,7 +14,7 @@ use SimpleSoftwareIO\SMS\IncomingMessage;
 use SimpleSoftwareIO\SMS\OutgoingMessage;
 use GuzzleHttp\Client;
 
-class Sun
+class Sun extends AbstractSMS implements DriverInterface
 {
     private $client;
 
